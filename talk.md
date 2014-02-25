@@ -194,14 +194,14 @@ class: inverse
 
 # Learning resources
 
-- Clojure for the Brave and True: [http://braveclojure.com]()
-- Light Table CLJS tutorial: [http://github.com/swannodette/lt-cljs-tutorial]()
-- Modern CLJS: [http://github.com/magomimmo/modern-cljs]()‎
+- Clojure for the Brave and True: [braveclojure.com]()
+- Light Table CLJS tutorial: [github.com/swannodette/lt-cljs-tutorial]()
+- Modern CLJS: [github.com/magomimmo/modern-cljs]()‎
 
 ---
 class: center, middle, inverse
 
 # Questions
 
-Slides online at
+Slides online at [cblop.github.io/clojurescript-talk]()
 

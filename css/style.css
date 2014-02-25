@@ -3,14 +3,14 @@
 
       body {
         font-family: 'Droid Serif';
-        font-size: 20px;
+        font-size: 28px;
       }
       h1, h2, h3 {
         font-family: 'Yanone Kaffeesatz';
         font-weight: 400;
         margin-bottom: 0;
       }
-      h1 { font-size: 4em; }
+      h1 { font-size: 3em; }
       h2 { font-size: 2em; }
       h3 { font-size: 1.6em; }
       .footnote {
@@ -29,7 +29,7 @@
         -web-border-radius: 5px;
         background: #e7e8e2;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 24px;
       }
       .pull-left {
         float: left;
@@ -56,7 +56,6 @@
       }
       .inverse h1, .inverse h2 {
         color: #f3f3f3;
-        line-height: 0.8em;
       }
 
       /* Slide-specific styling */

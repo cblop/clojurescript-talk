@@ -7,9 +7,11 @@ layout: true
 # Getting functional with Clojurescript
 A Lisp for the browser
 
+![Default-aligned-image](img/Clojure-Logo.png)
+
 ---
 layout: false
-# About me
+# Matt Thompson
 
 - EngD student at Bath/Sysemia ltd
 - Researching procedural narratives in games
@@ -25,9 +27,10 @@ class: center, middle, inverse
 
 # Clojurescript: what is it?
 
-- Dialect of Lisp (Clojure)
 - Compiles to Javascript
+- Dialect of Lisp (Clojure)
 - Can use JS libraries
+- Uses Google's closure (not Clojure) compiler
 
 ---
 class: center, middle, inverse
@@ -45,12 +48,33 @@ class: center, middle, inverse
 - Very simple syntax
 
 ---
-class: center, middle, inverse
+class: inverse
 # Clojure example
 
     (defn my-function [x y]
         (let [xs (* x x) ys (* y y)]
             (Math/sqrt (+ xs ys))))
+
+---
+
+class: inverse
+# Clojure example
+
+    (defn my-function [x y]
+        (let [xs (* x x) ys (* y y)]
+            (Math/sqrt (+ xs ys))))
+
+    var my-function = function(x, y) {
+        var xs = x * x;
+        var ys = y * y;
+        return sqrt(xs + ys);
+    }
+
+---
+class: center, middle, inverse
+
+# It's a tree!
+![Default-aligned-image](img/tree-dark.png)
 
 ---
 class: center, middle, inverse
@@ -94,24 +118,9 @@ class: inverse
 
 class: center, middle, inverse
 
-# Obligatory XKCD
+# Relevant XKCD
 
 ![Default-aligned-image](img/lisp_cycles.png)
-
----
-class: center, middle, inverse
-
-# Right. So what's functional programming?
-
----
-
-# Functional programming
-
-- Treats computation as the evaluation of mathematical functions
-- Avoids state and mutable data
-- Emphasis on functions that don't have side effects
-- Makes it easy to understand and predict the behaviour of a programme
-- Javascript has some FP elements!
 
 ---
 
@@ -120,11 +129,17 @@ class: center, middle, inverse
 # Syntax time!
 
 ---
+class: center, middle, inverse
+
+# What macros do
+![Default-aligned-image](img/macro.png)
+
+---
 
 # Light Table
 
 - A new editor written in Clojurescript
-- Inspired by a talk called "Inventing on Principle" by Bret Victor
+- Inspired by a talk called "[Inventing on Principle](vimeo.com/36579366)" by Bret Victor
 - Built for "live coding"
 - In very early alpha
 - Also supports JS, Python (right now), but is designed for Clojure(script)
@@ -134,27 +149,6 @@ class: center, middle, inverse
 class: center, middle, inverse
 
 # What is "live coding"?
-
----
-class: center, middle, inverse
-
-# But how do you make a game with no state?
-
----
-
-# How to make games in Clojurescript
-
-- data immutability is encouraged
-- so state is a problem, right?
-- component-entity-system design
-
----
-
-# Component-entity-system
-
-- most games have an object oriented design
-- can't really do that without state
-- CES represents the whole game as a data structure
 
 ---
 class: center, middle, inverse
@@ -176,7 +170,8 @@ class: center, middle, inverse
 # CLJS and React
 
 - Facebook made this library called React
-- client-side with React and Om: DOM is a canvas (check the terminology here)
+- client-side with React and Om
+- no need to worry about DOM elements, build stuff out of components
 - Om is hella fast due to immutability
 
 ---
@@ -194,14 +189,15 @@ class: inverse
 
 # Learning resources
 
-- Clojure for the Brave and True: [http://braveclojure.com]()
-- Light Table CLJS tutorial: [http://github.com/swannodette/lt-cljs-tutorial]()
-- Modern CLJS: [http://github.com/magomimmo/modern-cljs]()‎
+- Clojure for the Brave and True: [braveclojure.com]()
+- Light Table CLJS tutorial: [github.com/swannodette/lt-cljs-tutorial]()
+- Modern CLJS: [github.com/magomimmo/modern-cljs]()‎
 
 ---
 class: center, middle, inverse
 
 # Questions
 
-Slides online at
+Slides online at [cblop.github.io/clojurescript-talk]()
+Email me at: [matt.thompson@sysemia.co.uk]()
 

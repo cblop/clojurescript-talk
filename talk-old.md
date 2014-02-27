@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  </head>
-  <body>
-    <textarea id="source">
-
 
 class: center, middle, inverse
 layout: true
@@ -133,6 +123,21 @@ class: center, middle, inverse
 ![Default-aligned-image](img/lisp_cycles.png)
 
 ---
+class: center, middle, inverse
+
+# Right. So what's functional programming?
+
+---
+
+# Functional programming
+
+- Treats computation as the evaluation of mathematical functions
+- Avoids state and mutable data
+- Emphasis on functions that don't have side effects
+- Makes it easy to understand and predict the behaviour of a programme
+- Javascript has some FP elements!
+
+---
 
 class: center, middle, inverse
 
@@ -163,6 +168,27 @@ class: center, middle, inverse
 ---
 class: center, middle, inverse
 
+# But how do you make a game with no state?
+
+---
+
+# How to make games in Clojurescript
+
+- data immutability is encouraged
+- so state is a problem, right?
+- component-entity-system design
+
+---
+
+# Component-entity-system
+
+- most games have an object oriented design
+- can't really do that without state
+- CES represents the whole game as a data structure
+
+---
+class: center, middle, inverse
+
 # So, why would I use it?
 
 ---
@@ -180,8 +206,7 @@ class: center, middle, inverse
 # CLJS and React
 
 - Facebook made this library called React
-- client-side with React and Om
-- no need to worry about DOM elements, build stuff out of components
+- client-side with React and Om: DOM is a canvas (check the terminology here)
 - Om is hella fast due to immutability
 
 ---
@@ -209,22 +234,4 @@ class: center, middle, inverse
 # Questions
 
 Slides online at [cblop.github.io/clojurescript-talk]()
-Email me at: [matt.thompson@sysemia.co.uk]()
 
-
-
-    </textarea>
-      <script src="js/remark-0.6.0.min.js" type="text/javascript">
-    </script>
-      <script type="text/javascript">
-      var hljs = remark.highlighter.engine;
-    </script>
-      <script src="js/remark.language.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      var slideshow = remark.create({
-          highlightStyle: 'monokai',
-          highlightLanguage: 'clojure'
-        }) ;
-    </script>
-  </body>
-</html>

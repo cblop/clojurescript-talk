@@ -93,11 +93,6 @@
 (map #(* 2 %) [1 2 3 4 5])
 (map #(* 2 %) fibonacci)
 
-(defn shout [word]
-  (str (.toUpperCase word) "! "))
-
-(map shout ["it's" "me" "mario"])
-
 ;; reduce function
 (reduce + [1 2 3 4 5])
 (reduce + fibonacci)
